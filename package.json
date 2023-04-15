@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "parcel serve index.html --public-url / --dist-dir dist",
-    "build": "parcel build index.html",
+    "build": "npm install && parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -10,7 +10,7 @@
     "jquery": "^3.6.4",
     "sass": "^1.60.0"
   },
-  "dev-dependencies":{
+  "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
     "parcel": "^2.8.3"
   }
