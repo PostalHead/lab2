@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="/src/js/main.js"></script>
+    <link rel="stylesheet" href="/src/scss/styles.scss">
+</head>
+<body>
+    <nav class="navbar sticky-top">
+        <div class="container">
+            <div class="logo-website-name">
+                <div class="logo">Ⰱ</div>
+                <div class="website-name">Название сайта</div>
+            </div>
+            <button type="button" class="btn btn-warning" id="load-btn">Загрузить</button>
+        </div>
+    </nav>
+
+    <div class="container content">
+        
+        <h1 style="margin-bottom: 2rem;">Заголовок</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-6 gy-3">
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-tag">Lorem ipsum</div>
+                    <div class="card-img-top">
+                        <img src="/src/img/monolith.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam corporis animi tenetur quos!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-tag">Lorem ipsum</div>
+                    <div class="card-img-top">
+                        <img src="/src/img/monolith.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam corporis animi tenetur quos!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-tag">Lorem ipsum</div>
+                    <div class="card-img-top">
+                        <img src="/src/img/monolith.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam corporis animi tenetur quos!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-tag">Lorem ipsum</div>
+                    <div class="card-img-top">
+                        <img src="/src/img/monolith.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum 4</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam corporis animi tenetur quos!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-tag">Lorem ipsum</div>
+                    <div class="card-img-top">
+                        <img src="/src/img/monolith.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum 5</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam corporis animi tenetur quos!</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+    <nav class="navbar footer">
+        <div class="container">
+            <div class="author">Автор</div>
+            <div class="media">
+                <img src="/src/img/rss.png">
+                <img src="/src/img/rss.png">
+                <img src="/src/img/rss.png">
+            </div>
+        </div>
+    </nav>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Загрузить</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                На текущий момент загрузка недоступна.
+            </div>
+        </div>
+    </div>  
+    
+    <div class="modal fade" id="extended-info" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Error</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Lorem ipsum dolor sit amet">
+                    <p>Error.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+</body>
+</html>

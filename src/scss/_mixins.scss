@@ -1,0 +1,10 @@
+@mixin img-color($count) {
+    @for $i from 1 to $count {
+        &:nth-child(#{$i}n) img {
+            filter: contrast(75%) sepia() hue-rotate(calc($i/$count) * 360deg) saturate(2);
+        }
+        &:nth-child(#{$i}n) .card:hover {
+            border-bottom: 10px solid hsla(calc($i/$count) * 440, 75%, 70%, 100%);
+        }
+    }
+}

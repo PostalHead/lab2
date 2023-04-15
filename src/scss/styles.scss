@@ -1,0 +1,102 @@
+@import "_variables.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "_mixins.scss";
+
+.navbar{
+    &.sticky-top{
+        border-bottom: 2px solid $gray-300;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        background-color: $white;
+        margin-bottom: 2rem;
+    }
+
+    .logo-website-name{
+        display: flex;
+        gap: 1em;
+        align-items: center;
+    
+        .logo{
+            font-size: 2rem;
+            width: 1.5em;
+            background-color: $yellow-500;
+            border-radius: .25em;
+            text-align: center;
+            font-weight: 900;
+            cursor: default;
+        }
+    
+        .website-name{
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    &.footer{
+        color: $white;
+        background-color: $cyan-600;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        margin-top: 2rem;
+    
+        .media{
+            display: flex;
+            gap: .5em;
+            align-items: center;
+        
+            & img{
+                filter: invert(100);
+                width: 32px;
+                cursor: pointer;
+            }
+        }
+    
+        .author{
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+.container.content{
+    .col{
+        .card{
+            position: relative;
+            border-bottom: 10px solid $gray-300;
+            border-bottom-left-radius: 1em;
+            border-bottom-right-radius: 1em;
+            transition: ease .2s;
+
+            &:hover{
+                transition: ease .2s;
+            }
+
+            .card-tag{
+                position: absolute;
+                left: 1rem;
+                top: 1rem;
+                z-index: 10;
+                background-color: $yellow-500;
+                padding-left: $btn-padding-x;
+                padding-right: $btn-padding-x;
+                padding-top: $btn-padding-y;
+                padding-bottom: $btn-padding-y;
+                font-weight: $btn-font-weight;
+                border-radius: .25em;
+            }
+        }
+        @include img-color($count);
+    }
+}
+
+.toast{
+    border-bottom: 5px solid rgba($yellow-500, .85);
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+
+.modal-content{
+    border-bottom: 7px solid $yellow-500;
+    border-bottom-left-radius: .7em;
+    border-bottom-right-radius: .7em;
+}
