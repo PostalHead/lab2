@@ -11,11 +11,14 @@
 <body>
     <nav class="navbar sticky-top">
         <div class="container">
+
             <div class="logo-website-name">
                 <div class="logo">Ⰱ</div>
                 <div class="website-name">Название сайта</div>
-            </div>
-            <button type="button" class="btn btn-warning" id="load-btn">Загрузить</button>
+            </div>   
+               
+            <button type="button" class="btn btn-warning" id="load-btn"></button>
+
         </div>
     </nav>
 
@@ -84,8 +87,6 @@
                     </div>
                 </div>
             </div>
-            
-            
 
         </div>
     </div>
@@ -102,7 +103,7 @@
     </nav>
 
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div id="live-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
                 <strong class="me-auto">Загрузить</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -115,14 +116,18 @@
     
     <div class="modal fade" id="extended-info" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Lorem ipsum dolor sit amet">
                 <div class="modal-header">
                     <h5 class="modal-title">Error</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Lorem ipsum dolor sit amet">
-                    <p>Error.</p>
+                <div class="modal-body">
+                    Error.
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" id="modal-prev">Prev</button>
+                    <button type="button" class="btn btn-warning" id="modal-next">Next</button>
+                </div>            
             </div>
         </div>
     </div> 

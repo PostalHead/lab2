@@ -19,7 +19,7 @@
         .logo{
             font-size: 2rem;
             width: 1.5em;
-            background-color: $yellow-500;
+            background-color: $yellow;
             border-radius: .25em;
             text-align: center;
             font-weight: 900;
@@ -31,10 +31,16 @@
             text-align: center;
         }
     }
+    
+    #load-btn::before{
+        content: "📁";
+        @include media-breakpoint-up(sm){
+            content: "Загрузить";
+        }
+    }
 
     &.footer{
-        color: $white;
-        background-color: $cyan-600;
+        border-top: 2px solid $gray-300;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         margin-top: 2rem;
@@ -45,7 +51,6 @@
             align-items: center;
         
             & img{
-                filter: invert(100);
                 width: 32px;
                 cursor: pointer;
             }
@@ -76,7 +81,7 @@
                 left: 1rem;
                 top: 1rem;
                 z-index: 10;
-                background-color: $yellow-500;
+                background-color: $yellow;
                 padding-left: $btn-padding-x;
                 padding-right: $btn-padding-x;
                 padding-top: $btn-padding-y;
@@ -90,13 +95,13 @@
 }
 
 .toast{
-    border-bottom: 5px solid rgba($yellow-500, .85);
+    border-bottom: 5px solid rgba($cyan, .85);
     border-bottom-left-radius: .5em;
     border-bottom-right-radius: .5em;
 }
 
 .modal-content{
-    border-bottom: 7px solid $yellow-500;
+    border-bottom: 7px solid $cyan;
     border-bottom-left-radius: .7em;
     border-bottom-right-radius: .7em;
 }
