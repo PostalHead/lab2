@@ -14,7 +14,10 @@ $(function(){
         currentCardIndex = $(e.currentTarget).closest(".col").index();
         currentRow = $(e.currentTarget).closest(".row");
         $(".modal-title").text(`${$(e.currentTarget).find(".card-title").text()}`);
-        $(".modal-body").text(`${$(e.currentTarget).find(".card-text").text()}`);
+        $(".modal-body").html(`${$(e.currentTarget).find(".card-text").html()}`);
+        $(".modal-body").find('[data-bs-toggle="popover"]').map(function(){
+            return new bootstrap.Popover(this);
+        });
         bootstrap.Modal.getOrCreateInstance($('#extended-info')).show();
     });
 
@@ -40,10 +43,6 @@ $(function(){
         else if (e.key == "ArrowRight"){
             $("#modal-next").trigger("click");
         } 
-    });
-     
-    $(document).find('[data-bs-toggle="popover"]').map(function(){
-        return new bootstrap.Popover(this);
     });
 
 });

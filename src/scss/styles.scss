@@ -95,13 +95,17 @@
 }
 
 .toast{
-    border-bottom: 5px solid rgba($cyan, .85);
+    border-bottom: 5px solid rgba($yellow, .85);
     border-bottom-left-radius: .5em;
     border-bottom-right-radius: .5em;
 }
 
 .modal-content{
-    border-bottom: 7px solid $cyan;
+    border-bottom: 7px solid $yellow;
     border-bottom-left-radius: .7em;
     border-bottom-right-radius: .7em;
+}
+
+.mark{
+    background-color: #0dcaf050;
 }
